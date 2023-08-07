@@ -13,6 +13,8 @@ resource "aws_db_instance" "bp_rds_destination" {
   db_subnet_group_name = aws_db_subnet_group.bp_rds_subnet_group.name
   skip_final_snapshot  = true
   publicly_accessible  = false
+  parameter_group_name = "replication"
+  backup_retention_period = 4
 
   vpc_security_group_ids = [var.rds_security_group_id_destination]
 

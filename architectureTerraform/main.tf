@@ -61,10 +61,12 @@ module "DMS" {
   rds_security_group_id = module.SecurityGroups.rds_security_group_id
   rds_security_group_id_destination = module.SecurityGroups.rds_security_group_id_destination
   rds_endpoint = module.RDS.rds_endpoint
+  PUBLIC_SUBNET_ID = module.vpc.PUBLIC_SUBNET_ID
   PRIVATE_SUBNET_ID_1 = module.vpc.PRIVATE_SUBNET_ID_1
   PRIVATE_SUBNET_ID_2 = module.vpc.PRIVATE_SUBNET_ID_2
   PRIVATE_SUBNET_DESTINATION_2 = module.vpc.PRIVATE_SUBNET_DESTINATION_2
   PRIVATE_SUBNET_DESTINATION_1 = module.vpc.PRIVATE_SUBNET_DESTINATION_1
   rds_destination_endpoint = module.RDS_copy.rds_destination_endpoint
+  
   
 }

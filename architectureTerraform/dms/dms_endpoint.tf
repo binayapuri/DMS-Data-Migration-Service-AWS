@@ -2,7 +2,7 @@ resource "aws_dms_endpoint" "source_endpoint" {
   endpoint_id               = "source"
   endpoint_type             = "source"
   engine_name               = "mysql"  
-  username                  = "Source" 
+  username                  = "binay" 
   password                  = "password" 
   server_name               = var.rds_endpoint
   port                      = 3306 
@@ -13,7 +13,7 @@ resource "aws_dms_endpoint" "destination_endpoint" {
   endpoint_id               = "destination"
   endpoint_type             = "target"
   engine_name               = "mysql" 
-  username                  = "Destination"  
+  username                  = "binay"  
   password                  = "password" 
   server_name               = var.rds_destination_endpoint
   port                      = 3306 

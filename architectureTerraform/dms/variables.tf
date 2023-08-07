@@ -29,6 +29,10 @@ variable "rds_security_group_id" {
   
 }
 
+variable "PUBLIC_SUBNET_ID" {
+  
+}
+
 variable "rds_security_group_id_destination" {
   
 }

@@ -20,7 +20,7 @@ resource "aws_instance" "bp" {
   volume_tags = local.tags
   tags = {
     "owner"   = "binay"
-    "Name"    = "bp-instance"
+    "Name"    = "bp-instance-rds"
     "project" = "major"
   }
 
