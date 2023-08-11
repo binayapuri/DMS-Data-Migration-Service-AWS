@@ -20,6 +20,6 @@ resource "aws_db_instance" "bp_rds_destination" {
 
   tags = {
     "owner"   = "binay"
-    "Name"      = "bp_rds_destination"
+    "Name"      = "bp_rds_destination"  
   }
 }
